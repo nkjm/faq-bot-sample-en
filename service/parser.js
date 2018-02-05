@@ -2,7 +2,7 @@
 
 const debug = require('debug')('bot-express:service');
 const nlu = require("../service/dialogflow");
-const default_lang = "ja";
+const default_lang = "en";
 Promise = require('bluebird');
 
 module.exports = class ServiceParser {

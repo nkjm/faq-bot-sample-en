@@ -17,9 +17,11 @@ server.listen(process.env.PORT || 5000, () => {
 ** Mount bot-express
 */
 server.use("/webhook", bot_express({
+    language: "en",
     nlu: {
         options: {
-            client_access_token: process.env.DIALOGFLOW_CLIENT_ACCESS_TOKEN
+            client_access_token: process.env.DIALOGFLOW_CLIENT_ACCESS_TOKEN,
+            language: "en"
         }
     },
     line_channel_secret: process.env.LINE_CHANNEL_SECRET,
