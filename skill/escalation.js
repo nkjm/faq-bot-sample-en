@@ -76,7 +76,7 @@ module.exports = class SkillEscalation {
                                         question: context.translation || orig_message.text
                                     }
                                 },
-                                language: "ja"
+                                language: "en"
                             })
                         }]
                     }
