@@ -2,7 +2,7 @@
   "name": "Self Learning FAQ Bot",
   "description": "A sample FAQ chatbot with automatic learning feature.",
   "repository": "https://github.com/nkjm/faq-bot-sample-en",
-  "logo": "https://raw.githubusercontent.com/nkjm/faq-bot-sample/master/image/logo.png",
+  "logo": "https://raw.githubusercontent.com/nkjm/faq-bot-sample-en/master/image/logo.png",
   "env": {
       "LINE_CHANNEL_SECRET": {
           "description": "Secret key to validate the access to your webhook. You can find it in LINE Developers Console.",
@@ -25,8 +25,16 @@
           "required": true
       },
       "GOOGLE_PROJECT_ID": {
-          "description": "Google Project Id for translation.",
-          "required": false
+          "description": "Project ID of Google Cloud Platform which can be found in Agent configuration page of Dialogflow.",
+          "required": true
+      },
+      "GOOGLE_CLIENT_EMAIL": {
+          "description": "Client Email of Google Cloud Platform which can be found in Agent configuration page of Dialogflow.",
+          "required": true
+      },
+      "GOOGLE_PRIVATE_KEY": {
+          "description": "Private Key of Google Cloud Platform which can be found in JSON formatted key file of Google Service Account.",
+          "required": true
       },
       "GOOGLE_API_KEY": {
           "description": "Google API Key for translation.",
