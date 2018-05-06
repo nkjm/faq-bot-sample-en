@@ -10,7 +10,7 @@ const sessions_client = new dialogflow.SessionsClient({
     }
 })
 const session_path = sessions_client.sessionPath(process.env.GOOGLE_PROJECT_ID, process.env.GOOGLE_PROJECT_ID);
-const language = "en-US";
+const language = "en";
 const structjson = require("./structjson");
 
 module.exports = class ServiceParser {

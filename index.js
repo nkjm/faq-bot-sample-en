@@ -17,14 +17,14 @@ server.listen(process.env.PORT || 5000, () => {
 ** Mount bot-express
 */
 server.use("/webhook", bot_express({
-    language: "en-US",
+    language: "en",
     nlu: {
         type: "dialogflow",
         options: {
             project_id: process.env.GOOGLE_PROJECT_ID,
             client_email: process.env.GOOGLE_CLIENT_EMAIL,
             private_key: process.env.GOOGLE_PRIVATE_KEY,
-            language: "en-US"
+            language: "en"
         }
     },
     parser: [{
@@ -33,7 +33,7 @@ server.use("/webhook", bot_express({
             project_id: process.env.GOOGLE_PROJECT_ID,
             client_email: process.env.GOOGLE_CLIENT_EMAIL,
             private_key: process.env.GOOGLE_PRIVATE_KEY,
-            language: "en-US"
+            language: "en"
         }
     }],
     line_channel_secret: process.env.LINE_CHANNEL_SECRET,

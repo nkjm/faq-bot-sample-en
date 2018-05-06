@@ -1,7 +1,7 @@
 "use strict";
 
 const debug = require("debug")("bot-express:service");
-const language = "en-US";
+const language = "en";
 const dialogflow = require("dialogflow");
 const structjson = require("./structjson");
 
