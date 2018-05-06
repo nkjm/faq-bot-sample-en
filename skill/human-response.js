@@ -31,6 +31,7 @@ module.exports = class SkillHumanResponse {
                 },
                 parser: (value, bot, event, context, resolve, reject) => {
                     return parser.parse("yes_no", value, resolve, reject);
+                },
                 reaction: (error, value, bot, event, context, resolve, reject) => {
                     if (error) return resolve();
                     if (value.match(/No/i)) return resolve();
